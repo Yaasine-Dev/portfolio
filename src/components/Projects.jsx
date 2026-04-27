@@ -125,8 +125,9 @@ function ProjectCard({ p, i }) {
             <GitHubIcon size={14} /> Code
           </a>
           <a href={p.demo}
-            style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.82rem', fontWeight: 600, padding: '9px 0', borderRadius: 10, border: '1px solid var(--border)', transition: 'all 0.25s', opacity: 0.6, cursor: 'default' }}>
-            <ArrowUpRight size={14} /> Coming Soon
+            style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.82rem', fontWeight: 600, padding: '9px 0', borderRadius: 10, border: '1px solid var(--border)', opacity: 0.6, cursor: 'default' }}>
+            <ArrowUpRight size={14} /> Live Demo
+            <span style={{ fontSize: '0.65rem', fontWeight: 800, background: 'rgba(40,114,159,0.15)', color: 'var(--ocean)', padding: '2px 8px', borderRadius: 50, letterSpacing: '0.08em', textTransform: 'uppercase', border: '1px solid rgba(40,114,159,0.25)' }}>Soon</span>
           </a>
         </div>
       </div>
