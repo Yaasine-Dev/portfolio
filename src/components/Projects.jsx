@@ -125,10 +125,8 @@ function ProjectCard({ p, i }) {
             <GitHubIcon size={14} /> Code
           </a>
           <a href={p.demo}
-            style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.82rem', fontWeight: 600, padding: '9px 0', borderRadius: 10, border: '1px solid var(--border)', transition: 'all 0.25s' }}
-            onMouseEnter={e => { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.borderColor = 'var(--ocean)'; e.currentTarget.style.background = 'rgba(40,114,159,0.08)'; }}
-            onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.background = 'transparent'; }}>
-            <ArrowUpRight size={14} /> Live Demo
+            style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.82rem', fontWeight: 600, padding: '9px 0', borderRadius: 10, border: '1px solid var(--border)', transition: 'all 0.25s', opacity: 0.6, cursor: 'default' }}>
+            <ArrowUpRight size={14} /> Coming Soon
           </a>
         </div>
       </div>
