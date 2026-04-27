@@ -55,9 +55,7 @@ export default function Footer() {
         </div>
 
         <div style={{ paddingTop: 24, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6, color: 'var(--text-muted)', fontSize: '0.78rem' }}>
-          <span>© 2025 Elkortih Yassine — Built with</span>
-          <Heart size={12} fill="var(--ocean)" color="var(--ocean)" />
-          <span>React, Three.js, GSAP & Framer Motion</span>
+          <span>© 2025 Elkortih Yassine</span>
         </div>
       </div>
       <style>{`@media(max-width:768px){.ft-inner>div:first-child{grid-template-columns:1fr!important;text-align:center}.ft-inner>div:first-child>div:last-child{justify-content:center!important}}`}</style>
