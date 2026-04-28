@@ -126,6 +126,50 @@ section { padding: 130px 0; position: relative; }
 }
 
 @media (max-width: 768px) {
-  .container { padding: 0 24px; }
-  section { padding: 90px 0; }
+  .container { padding: 0 20px; }
+  section { padding: 80px 0; }
+}
+
+/* ===== GLOBAL MOBILE ===== */
+@media (max-width: 768px) {
+  .section-heading { font-size: clamp(1.8rem, 8vw, 2.4rem) !important; }
+
+  /* Navbar */
+  nav { padding: 0 20px !important; }
+
+  /* Hero */
+  #about .container > div { grid-template-columns: 1fr !important; gap: 0 !important; }
+  .h-avatar-wrap { display: none !important; }
+  #about { padding-top: 90px !important; padding-bottom: 60px !important; }
+
+  /* Skills */
+  #skills .container > div:nth-child(2) { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .sk-cats { grid-template-columns: 1fr 1fr !important; }
+
+  /* Experience roadmap */
+  .rm-track { max-width: 100% !important; }
+  .rm-card { grid-template-columns: 0 44px 1fr !important; }
+  .rm-card > div:first-child { display: none !important; }
+  .rm-card > div:last-child { padding-left: 16px !important; padding-bottom: 32px !important; }
+
+  /* Projects */
+  #projects .container > div:nth-child(2) { grid-template-columns: 1fr !important; }
+
+  /* Certificates */
+  .cert-grid { grid-template-columns: 1fr 1fr !important; }
+
+  /* Contact */
+  #contact .container > div:last-child { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .ct-form { padding: 24px 20px !important; }
+  .ct-form > div:first-child { grid-template-columns: 1fr !important; }
+
+  /* Footer */
+  .ft-inner > div:first-child { grid-template-columns: 1fr !important; text-align: center !important; justify-items: center; }
+  .ft-inner > div:first-child > div:last-child { justify-content: center !important; }
+}
+
+@media (max-width: 480px) {
+  .cert-grid { grid-template-columns: 1fr !important; }
+  .sk-cats { grid-template-columns: 1fr !important; }
+  .h-actions > div { flex-wrap: wrap !important; }
 }

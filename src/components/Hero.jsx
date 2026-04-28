@@ -206,7 +206,16 @@ export default function Hero() {
         @keyframes blink{0%,100%{opacity:1}50%{opacity:0.25}}
         @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
         @keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(9px)}}
-        @media(max-width:900px){#about .container>div{grid-template-columns:1fr!important}.h-avatar-wrap{display:none!important}}
+        @media(max-width:900px){
+          #about .container>div{grid-template-columns:1fr!important;gap:40px!important}
+          .h-avatar-wrap{display:flex!important;order:-1}
+          .h-photo-img{width:160px!important;height:160px!important}
+          .h-avatar-wrap .glass-card{display:none}
+        }
+        @media(max-width:600px){
+          .h-avatar-wrap{display:none!important}
+          .h-actions>div{flex-wrap:wrap!important}
+        }
       `}</style>
     </section>
   );

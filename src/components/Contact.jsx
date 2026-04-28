@@ -99,7 +99,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      <style>{`@media(max-width:768px){#contact .container>div:last-child{grid-template-columns:1fr!important}.ct-form{padding:24px!important}}`}</style>
+      <style>{`@media(max-width:768px){#contact .container>div:last-child{grid-template-columns:1fr!important}.ct-form{padding:24px!important}.ct-form>div:first-child{grid-template-columns:1fr!important}}`}</style>
     </section>
   );
 }
